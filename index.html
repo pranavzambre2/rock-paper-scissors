@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body id="body">
+    <div id="name">
+        <div id="score">YOUR SCORE
+            <p>0</p>
+        </div>
+        <h1 class="names">ROCK</h1><br>
+        <h1 class="names">PAPER</h1><br>
+        <h1 class="names">SCISSORS</h1>
+    </div>
+
+    <div class="options">
+        <div>
+            <img src="line1.png" class="line1" alt="line">
+            <img src="line2.png" class="line2" alt="line">
+            <img src="line3.png" class="line3" alt="line">
+            <button class="scissors" onclick="condition('scissors')"><img src="scissors.png" alt="scissors"></button>
+            <button class="rock" onclick="condition('rock')"><img src="rock.png" alt="rock"></button>
+            <br>
+            <br>
+            <button class="paper" onclick="condition('paper')"><img src="paper.png" alt="paper"></button>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1 style="text-align: center;" >Game Rules</h1>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beat rock.</li><br>
+                <li>Agree ahead of time whether you'll count off "rock,paper,scissors shoot" or just "rock, paper,
+                    scissors.</li><br>
+                <li>Use rock paper, scissors to settle minor decisions or simply play to pass the game.</li><br>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+
+        </div>
+        <button onclick="togglePopup()" class="btn">RULES</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
